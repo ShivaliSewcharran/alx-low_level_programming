@@ -6,17 +6,14 @@
   */
 int main(void)
 {
-	int n = 97;
+	int i;
 
-	while (n <= 122)
+	for (i = 97; i < 123; i++)
 	{
-		if (n == 101 || n == 133)
+		if (i != 101 && i != 133)
 		{
-			n++;
-			continue;
+			putchar(i);
 		}
-		putchar(n);
-		n++;
 	}
 	putchar('\n');
 	return (0);
