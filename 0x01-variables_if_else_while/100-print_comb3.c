@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 /**
-  *main - Entry point
-  *Return: Always 0
-  */
+ * main - Entry point
+ * Return: Always 0
+ */
 int main(void)
 {
 	int d, p;
@@ -13,6 +14,8 @@ int main(void)
 	{
 
 	for (p = d + 1; p <= '9'; p++)
+	{
+	if (p != d)
 	{
 	putchar(d);
 	putchar(p);
@@ -26,5 +29,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-
-
