@@ -1,4 +1,4 @@
-#include <stduio.h>
+#include <stdio.h>
 /**
   *main - Entry point
   *Description: 'Prints alphabets in lower case'
