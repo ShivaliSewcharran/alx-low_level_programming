@@ -12,7 +12,7 @@ int main(void)
 	for (d = '0'; d < '9'; d++)
 	{
 
-	for (p = d + 1: p <= '9'; p++)
+	for (p = d + 1; p <= '9'; p++)
 	{
 	putchar(d);
 	putchar(p);
@@ -22,7 +22,9 @@ int main(void)
 	putchar(' ');
 	}
 	}
-        }
-        putchar('\n');
+	}
+	putchar('\n');
 	return (0);
 }
+
+
