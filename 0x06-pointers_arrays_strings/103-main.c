@@ -33,7 +33,7 @@ int main(void)
 	}
 	else
 	{
-	printf("%s + %s = %s\n", n, m, res)
+	printf("%s + %s = %s\n", n, m, res);
 	}
 	n = "999999999";
 	m = "1";
