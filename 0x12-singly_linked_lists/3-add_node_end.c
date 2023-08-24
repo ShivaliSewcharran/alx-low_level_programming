@@ -7,34 +7,34 @@
  * @my_list: double pointer to the my_list_t list
  * @data: string to store in the new node
  *
- * Return: address of the new element, or NULL if it fails
+ * Return: address of the new element, or NULL if it failed.
  */
-my_list_t *my_add_node_end(my_list_t **my_list, const char *data)
+list_t *add_node_end(list_t **head, const char *str)
 {
-	my_list_t *new_node;
-	my_list_t *temp = *my_list;
-	unsigned int length = 0;
+	list_t *new;
+	list_t *temp = *head;
+	unsigned int len = 0;
 
-	while (data[length])
-		length++;
+	while (str[len])
+		len++;
 
-	new_node = malloc(sizeof(my_list_t));
-	if (!new_node)
-	return (NULL);
+	new = malloc(sizeof(list_t));
+	if (!new)
+		return (NULL);
 
-	new_node->data = strdup(data);
-	new_node->length = length;
-	new_node->next = NULL;
+	new->str = strdup(str);
+	new->len = len;
+	new->next = NULL;
 
-	if (*my_list == NULL)
+	if (*head == NULL)
 	{
-	*my_list = new_node;
-	return (new_node);
+		*head = new;
+		return (new);
 	}
 
 	while (temp->next)
-	temp = temp->next;
+		temp = temp->next;
 
-	temp->next = new_node;
-	return (new_node);
+	temp->next = new;
+	return (new);
 }
