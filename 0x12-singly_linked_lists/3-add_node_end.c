@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <string.h>
-#include "my_lists.h"
+#include "lists.h"
 
 /**
  * my_add_node_end - adds a new node at the end of my custom linked list
@@ -37,4 +37,4 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	temp->next = new;
 	return (new);
-}
+i}

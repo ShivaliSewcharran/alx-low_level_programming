@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "my_lists.h"  // Replace "lists.h" with your own header file
+#include "lists.h"
 
 /**
  * my_custom_free_list - Frees a custom linked list
